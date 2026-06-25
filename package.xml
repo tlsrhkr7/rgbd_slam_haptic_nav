@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>slam_mapping</name>
+  <version>0.1.0</version>
+  <description>Live D435i RGB-D + IMU mapping using RTAB-Map. Outputs a .db database that can be reused later for localization-only / Nav2.</description>
+  <maintainer email="tlsrhkr7@gmail.com">신동준</maintainer>
+  <license>TODO</license>
+
+  <exec_depend>realsense2_camera</exec_depend>
+  <exec_depend>rtabmap_launch</exec_depend>
+  <exec_depend>rtabmap_slam</exec_depend>
+  <exec_depend>rtabmap_odom</exec_depend>
+  <exec_depend>rtabmap_sync</exec_depend>
+  <exec_depend>rtabmap_viz</exec_depend>
+  <exec_depend>imu_filter_madgwick</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
